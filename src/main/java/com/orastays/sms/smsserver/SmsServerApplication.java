@@ -4,19 +4,19 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.context.annotation.Bean;
-import org.springframework.scheduling.annotation.EnableAsync;
-import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
-import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
+import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 @SpringBootApplication
-@EnableAsync
-@EnableResourceServer
-@EnableGlobalMethodSecurity(prePostEnabled=true)
-//@EnableEurekaClient
+//@EnableResourceServer
+//@EnableGlobalMethodSecurity(prePostEnabled=true)
+@EnableDiscoveryClient
+@EnableHystrix
 public class SmsServerApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
@@ -36,5 +36,10 @@ public class SmsServerApplication extends SpringBootServletInitializer {
 				registry.addMapping("/**").allowedOrigins("*");
 			}
 		};
+	}
+	
+	@Bean
+	public RestTemplate restTemplate() {
+		return new RestTemplate();
 	}
 }
