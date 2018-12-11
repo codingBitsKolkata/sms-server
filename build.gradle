@@ -11,6 +11,10 @@ buildscript {
 	}
 }
 
+plugins {
+  id "org.sonarqube" version "2.4"
+}
+
 ext {
 		springCloudVersion = 'Edgware.SR5'
 	}
