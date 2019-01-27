@@ -31,8 +31,8 @@ public class SMSValidation extends AuthorizeUserValidation {
 	
 	public void validateSMS(SMSModel smsModel) throws FormExceptions {
 
-		if (logger.isDebugEnabled()) {
-			logger.debug("validateSMS -- Start");
+		if (logger.isInfoEnabled()) {
+			logger.info("validateSMS -- Start");
 		}
 
 		Util.printLog(smsModel, AuthConstant.INCOMING, "Send SMS", request);
@@ -53,8 +53,8 @@ public class SMSValidation extends AuthorizeUserValidation {
 		if (exceptions.size() > 0)
 			throw new FormExceptions(exceptions);
 		
-		if (logger.isDebugEnabled()) {
-			logger.debug("validateSMS -- End");
+		if (logger.isInfoEnabled()) {
+			logger.info("validateSMS -- End");
 		}
 	}
 }
