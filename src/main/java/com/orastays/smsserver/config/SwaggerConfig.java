@@ -14,19 +14,27 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @Configuration
 @EnableSwagger2
-public class ApplicationConfig {
+public class SwaggerConfig {
 
 	@Bean
 	public Docket api() {
-		return new Docket(DocumentationType.SWAGGER_2).apiInfo(getApiInfo()).select()
-				.apis(RequestHandlerSelectors.basePackage("com.orastays.sms.smsserver.controller"))
-				.paths(PathSelectors.any()).build();
+		return new Docket(DocumentationType.SWAGGER_2)
+				.apiInfo(getApiInfo())
+				.select()
+				.apis(RequestHandlerSelectors.basePackage("com.orastays.smsserver.controller"))
+				.paths(PathSelectors.any())
+				.build();
 	}
 
 	private ApiInfo getApiInfo() {
 		Contact contact = new Contact("", "", "");
-		return new ApiInfoBuilder().title("SMS Server Dashboard").description("SMS Server Definition").version("1.0.0")
-				.license("Apache 2.0").licenseUrl("http://www.apache.org/licenses/LICENSE-2.0").contact(contact)
-				.build();
+		return new ApiInfoBuilder().
+				title("SMS Server Dashboard").
+				description("SMS Server Definition")
+				.version("1.0.0")
+                .license("OraStays 1.0")
+                .licenseUrl("http://www.orastays.com")
+                .contact(contact)
+                .build();
 	}
 }
