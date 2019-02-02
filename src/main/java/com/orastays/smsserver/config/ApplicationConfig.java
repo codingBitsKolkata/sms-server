@@ -1,4 +1,4 @@
-package com.orastays.sms.smsserver.config;
+package com.orastays.smsserver.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -2,7 +2,7 @@
  * @formatter:off
  *
  */
-package com.orastays.sms.smsserver.controller;
+package com.orastays.smsserver.controller;
 
 import java.io.BufferedInputStream;
 import java.io.File;

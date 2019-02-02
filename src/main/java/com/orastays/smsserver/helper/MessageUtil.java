@@ -1,4 +1,4 @@
-package com.orastays.sms.smsserver.helper;
+package com.orastays.smsserver.helper;
 
 import java.io.IOException;
 import java.util.Properties;

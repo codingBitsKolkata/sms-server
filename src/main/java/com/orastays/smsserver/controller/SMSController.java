@@ -1,4 +1,4 @@
-package com.orastays.sms.smsserver.controller;
+package com.orastays.smsserver.controller;
 
 import java.util.Map.Entry;
 
@@ -15,14 +15,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.orastays.sms.smsserver.exceptions.FormExceptions;
-import com.orastays.sms.smsserver.exceptions.SMSSendException;
-import com.orastays.sms.smsserver.helper.AuthConstant;
-import com.orastays.sms.smsserver.helper.MessageUtil;
-import com.orastays.sms.smsserver.helper.Util;
-import com.orastays.sms.smsserver.model.ResponseModel;
-import com.orastays.sms.smsserver.model.SMSModel;
-import com.orastays.sms.smsserver.service.SMSService;
+import com.orastays.smsserver.exceptions.FormExceptions;
+import com.orastays.smsserver.exceptions.SMSSendException;
+import com.orastays.smsserver.helper.AuthConstant;
+import com.orastays.smsserver.helper.MessageUtil;
+import com.orastays.smsserver.helper.Util;
+import com.orastays.smsserver.model.ResponseModel;
+import com.orastays.smsserver.model.SMSModel;
+import com.orastays.smsserver.service.SMSService;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

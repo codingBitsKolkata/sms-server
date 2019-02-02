@@ -1,4 +1,4 @@
-package com.orastays.sms.smsserver;
+package com.orastays.smsserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;

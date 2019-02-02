@@ -1,4 +1,4 @@
-package com.orastays.sms.smsserver.helper;
+package com.orastays.smsserver.helper;
 
 public enum Status {
 

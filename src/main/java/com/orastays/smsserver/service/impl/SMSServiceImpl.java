@@ -1,4 +1,4 @@
-package com.orastays.sms.smsserver.service.impl;
+package com.orastays.smsserver.service.impl;
 
 import java.util.Collections;
 
@@ -8,12 +8,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.orastays.sms.smsserver.exceptions.FormExceptions;
-import com.orastays.sms.smsserver.exceptions.SMSSendException;
-import com.orastays.sms.smsserver.helper.MessageUtil;
-import com.orastays.sms.smsserver.model.SMSModel;
-import com.orastays.sms.smsserver.service.SMSService;
-import com.orastays.sms.smsserver.validation.SMSValidation;
+import com.orastays.smsserver.exceptions.FormExceptions;
+import com.orastays.smsserver.exceptions.SMSSendException;
+import com.orastays.smsserver.helper.MessageUtil;
+import com.orastays.smsserver.model.SMSModel;
+import com.orastays.smsserver.service.SMSService;
+import com.orastays.smsserver.validation.SMSValidation;
 import com.plivo.api.Plivo;
 import com.plivo.api.models.message.Message;
 

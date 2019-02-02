@@ -1,4 +1,4 @@
-package com.orastays.sms.smsserver.validation;
+package com.orastays.smsserver.validation;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -12,11 +12,11 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.orastays.sms.smsserver.exceptions.FormExceptions;
-import com.orastays.sms.smsserver.helper.AuthConstant;
-import com.orastays.sms.smsserver.helper.MessageUtil;
-import com.orastays.sms.smsserver.helper.Util;
-import com.orastays.sms.smsserver.model.SMSModel;
+import com.orastays.smsserver.exceptions.FormExceptions;
+import com.orastays.smsserver.helper.AuthConstant;
+import com.orastays.smsserver.helper.MessageUtil;
+import com.orastays.smsserver.helper.Util;
+import com.orastays.smsserver.model.SMSModel;
 
 @Component
 public class SMSValidation extends AuthorizeUserValidation {

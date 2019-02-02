@@ -1,4 +1,4 @@
-package com.orastays.sms.smsserver.helper;
+package com.orastays.smsserver.helper;
 
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;

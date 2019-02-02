@@ -1,4 +1,4 @@
-package com.orastays.sms.smsserver.model;
+package com.orastays.smsserver.model;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.EqualsAndHashCode;

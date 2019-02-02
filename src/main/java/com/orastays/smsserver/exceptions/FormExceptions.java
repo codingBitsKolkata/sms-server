@@ -1,4 +1,4 @@
-package com.orastays.sms.smsserver.exceptions;
+package com.orastays.smsserver.exceptions;
 
 import java.util.ArrayList;
 import java.util.HashMap;
