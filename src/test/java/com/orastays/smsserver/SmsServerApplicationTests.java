@@ -1,4 +1,4 @@
-package com.orastays.sms.smsserver;
+package com.orastays.smsserver;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
