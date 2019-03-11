@@ -31,7 +31,7 @@ import io.swagger.annotations.ApiResponses;
 
 @RestController
 @CrossOrigin(origins = "*")
-@RequestMapping("/api")
+//@RequestMapping("/api")
 @Api(value = "sms", description = "Rest API for SMS", tags = "SMS API")
 public class SMSController {
 
